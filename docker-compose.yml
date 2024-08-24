@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  assassinmagewarrior.api:
+    image: ${DOCKER_REGISTRY-}assassinmagewarriorapi
+    build:
+      context: .
+      dockerfile: src/AssassinMageWarrior.API/Dockerfile
